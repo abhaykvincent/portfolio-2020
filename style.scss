@@ -26,7 +26,6 @@ main{
             width: 100vw;
             height: calc(100vh - 100px);
             .circles{
-                position: sticky;
                 top: 50vh;
                 transform: translateY(-50%);
                 left: 40px;
@@ -40,12 +39,14 @@ main{
                     background-color: rgb(230, 230, 230);
                     border-radius: 50%;
                     filter: drop-shadow(-3px -3px 5px #ffffff) drop-shadow(2px 2px 2px #b3b3b3);
+
                     &:active{
-                        filter: drop-shadow( 0px 0px  0px rgba(255, 255, 255, 0)) 
+                        filter: drop-shadow(0px 0px 0px #ffffff00) drop-shadow(0px 0px 0px #b3b3b300)
                     
                     }
                     &:hover{
-                        filter: drop-shadow(-3px -3px 6px #ffffff) drop-shadow(4px 2px 2px #b3b3b3);
+                        border: 5px  solid rgb(87, 77, 77);
+                        filter: drop-shadow(-3px -3px 6px #ffffff) drop-shadow(3px 3px 2px #b3b3b3);
                     
                     }
                 }
@@ -56,6 +57,7 @@ main{
     .right-diagonal-1{
         width: 100vw;
         height: 100vh;
+        margin: 0px 200px;
         clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
         background-color: rgba(0, 0, 0,0.05);
     }

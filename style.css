@@ -36,8 +36,6 @@ main article.splash {
 }
 
 main article.splash .circles {
-  position: -webkit-sticky;
-  position: sticky;
   top: 50vh;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -58,18 +56,20 @@ main article.splash .circles .circle {
 }
 
 main article.splash .circles .circle:active {
-  -webkit-filter: drop-shadow(0px 0px 0px rgba(255, 255, 255, 0));
-          filter: drop-shadow(0px 0px 0px rgba(255, 255, 255, 0));
+  -webkit-filter: drop-shadow(0px 0px 0px #ffffff00) drop-shadow(0px 0px 0px #b3b3b300);
+          filter: drop-shadow(0px 0px 0px #ffffff00) drop-shadow(0px 0px 0px #b3b3b300);
 }
 
 main article.splash .circles .circle:hover {
-  -webkit-filter: drop-shadow(-3px -3px 6px #ffffff) drop-shadow(4px 2px 2px #b3b3b3);
-          filter: drop-shadow(-3px -3px 6px #ffffff) drop-shadow(4px 2px 2px #b3b3b3);
+  border: 5px solid #574d4d;
+  -webkit-filter: drop-shadow(-3px -3px 6px #ffffff) drop-shadow(3px 3px 2px #b3b3b3);
+          filter: drop-shadow(-3px -3px 6px #ffffff) drop-shadow(3px 3px 2px #b3b3b3);
 }
 
 main .right-diagonal-1 {
   width: 100vw;
   height: 100vh;
+  margin: 0px 200px;
   -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
           clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
   background-color: rgba(0, 0, 0, 0.05);
