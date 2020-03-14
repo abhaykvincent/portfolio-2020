@@ -1,38 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <header></header>
+
+    <header class="grid-x">
+        <div class="logo large-2 medium-2  small-4">
+            <img src="src/img/logo.png" alt="" srcset="">
+        </div>
+        <div class=" large-9 medium-9 small-4 grid-x">
+            <div class="roles large-6 small-4">
+            </div>
+            <div class="roles large-6 medium-6 small-4">
+                <h3 class="role">Illustration</h3>
+                <h3 class="role role-active">Web</h3>
+            </div>
+        </div>
+        <div class="large-1 small-4">
+            <button class="hamburger hamburger--emphatic" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
+    </header>
     <main>
         <article class="splash grid-x">
 
-            <div class="large-3  left">
+            <div class="large-2  left">
                 <div class="circles">
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                    <div class="circle"></div>
+                    <div class="circle"><i class="fab fa-instagram"> </i></div>
+                    <div class="circle"><i class="fab fa-linkedin-in"></i></div>
+                    <div class="circle"><i class="fab fa-facebook-f"></i></div>
+                    <div class="circle"><i class="fas fa-at"></i></div>
                 </div>
             </div>
 
-            <div class="large-9  right"></div>
-        </article>
+            <div class="large-10 grid-x right">
+                <div class="splashPortfolioName large-12">
+                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 132.836 26.894">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: none;
+                                }
 
-        <article class="right-diagonal-1">
-        </article>
+                                .cls-2 {
+                                    clip-path: url(#clip-path);
+                                }
 
+                                .cls-10,
+                                .cls-3 {
+                                    font-size: 12px;
+                                }
+
+                                .cls-10,
+                                .cls-3,
+                                .cls-8 {
+                                    fill: #231f20;
+                                }
+
+                                .cls-3 {
+                                    font-weight: 700;
+                                }
+
+                                .cls-4 {
+                                    letter-spacing: -0.049em;
+                                }
+
+                                .cls-5 {
+                                    letter-spacing: 0.007em;
+                                }
+
+                                .cls-6 {
+                                    letter-spacing: -0.021em;
+                                }
+
+                                .cls-7 {
+                                    letter-spacing: -0.064em;
+                                }
+
+                                .cls-9 {
+                                    clip-path: url(#clip-path-2);
+                                }
+
+                                .cls-10 {
+                                    font-weight: 300;
+                                }
+
+                                .cls-11 {
+                                    letter-spacing: -0.035em;
+                                }
+
+                                .cls-12 {
+                                    letter-spacing: -0.014em;
+                                }
+                            </style>
+                            <clipPath id="clip-path" transform="translate(-147.222 -335.165)">
+                                <rect class="cls-1" x="227.806" y="335.165" width="53.716" height="16.894" />
+                            </clipPath>
+                            <clipPath id="clip-path-2" transform="translate(-147.222 -335.165)">
+                                <rect class="cls-1" x="145.553" y="335.165" width="80.001" height="16.894" />
+                            </clipPath>
+                        </defs>
+                        <title>Untitled-1</title>
+                        <g class="cls-2">
+                            <text class="cls-3 portfolio" transform="translate(-83 13.057)">Portfolio</text>
+                        </g>
+                        <rect class="cls-8 bar" x="78.331" width="2" height="13" />
+                        <g class="cls-9">
+                            <text class="cls-10 abhayVincent" transform="translate(80 13.057)">Abhay Vincent</text>
+                        </g>
+                        <g xmlns="http://www.w3.org/2000/svg" class="cls-13">
+                            <text class="cls-14 fullstack" transform="translate(150 24.951)">
+                                Fullstack Developer . <tspan class="fullstacka">Artist</tspan> . <tspan class="fullstackb">Illustrator</tspan>
+                            </text>
+                        </g>
+                    </svg>
+                </div>
+                <div class="splashArrow large-12">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 11.928 67.28">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: none;
+                                    stroke: #231f20;
+                                    stroke-miterlimit: 10;
+                                }
+                            </style>
+                        </defs>
+                        <title>Untitled-1</title>
+                        <polyline class="cls-1" points="11.428 0 11.428 66.073 0.354 54.998" />
+                    </svg>
+                </div>
+            </div>
+        </article>
+        <div class="scrollHeader grid-x">
+            <div class="menu"><h5>Info</h5></div>
+            <div class="menu"><h5>Skills</h5></div>
+            <div class="menu"><h5>Projects</h5></div>
+            <div class="menu"><h5>Contact</h5></div>
+        </div>
+        <article class="portfolioSection info grid-x">
+            <aside class="large-4 medium-6 small-12 ">
+                <div class="infoCard">
+                    <div class="profile"></div>
+                    <div class="profileInfo">
+                        <h4>Abhay Vincent</h4>
+                        <p>Full-stack Developer</p>
+                        <p>+1 365 688 2276</p>
+                    </div>
+                </div>
+            </aside>
+        </article>
+        <article class="portfolioSection skills">
+        </article>
+        <footer></footer>
     </main>
     <!-- Style -->
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="src/stylesheets/vendor/foundation.css">
+    <link rel="stylesheet" href="src/stylesheets/style.css">
     <!-- Scripts -->
     <script src="src/scripts/vendor/jquery-3.4.1.min.js"></script>
+    <script src="src/scripts/vendor/what-input.js"></script>
+    <script src="src/scripts/vendor/foundation.js"></script>
     <script src="src/scripts/vendor/TweenMax.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+
+    <!-- Font -->
+    <script src="https://kit.fontawesome.com/9f2e6fd0b8.js" crossorigin="anonymous"></script>
+    <!-- Private Libraries -->
+
     <!-- App js -->
     <script src="src/scripts/app.js"></script>
+
 </body>
+
 </html>
