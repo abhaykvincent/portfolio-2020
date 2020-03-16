@@ -5,6 +5,7 @@
  * @site https://jonsuh.com/hamburgers
  * @link https://github.com/jonsuh/hamburgers
  */
+@import url("https://fonts.googleapis.com/css?family=Caveat&display=swap");
 .hamburger {
   display: inline-block;
   cursor: pointer;
@@ -1369,10 +1370,12 @@ h3 {
 
 body {
   background-color: #e7e7e7;
+  width: 100%;
 }
 
 body header {
-  width: 100vw;
+  margin-top: 0px;
+  width: 100%;
   height: 100px;
 }
 
@@ -1394,9 +1397,7 @@ body header .roles .role {
   float: right;
   position: relative;
   top: 50%;
-  padding: 5px 20px;
-  margin: auto 0px;
-  margin-left: 20px;
+  margin: auto 40px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   display: inline-block;
@@ -1417,9 +1418,12 @@ body header .roles .role:active {
 }
 
 body header .hamburger {
+  position: -webkit-sticky;
+  position: sticky;
   float: right;
   height: 100%;
-  padding: 30px 40px;
+  -webkit-transform: translateX(-40px);
+          transform: translateX(-40px);
 }
 
 body main {
@@ -1436,7 +1440,7 @@ body main article {
 body main article.splash {
   position: relative;
   width: 100vw;
-  height: 100%;
+  height: 100vh;
 }
 
 body main article.splash .left {
@@ -1455,10 +1459,11 @@ body main article.splash .left .circles {
 body main article.splash .left .circles .circle {
   display: block;
   position: relative;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   margin: 40px;
-  line-height: 40px;
+  font-size: 20px;
+  line-height: 60px;
   text-align: center;
   background-color: #e6e6e6;
   border-radius: 50%;
@@ -1480,7 +1485,9 @@ body main article.splash .left .circles .circle:hover {
 body main article.splash .left .circles .circle:active {
   -webkit-filter: none;
           filter: none;
-  line-height: 42px;
+  line-height: 55px;
+  background-color: rgba(0, 0, 0, 0.04);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 body main article.splash .left .circles .circle .circleLabel {
@@ -1489,6 +1496,35 @@ body main article.splash .left .circles .circle .circleLabel {
 
 body main article.splash .right {
   background-color: rgba(0, 0, 0, 0);
+}
+
+body main article.splash .right .splashSpot {
+  position: absolute;
+  right: 0px;
+  top: calc(40vh - 20vw);
+  -webkit-transform: translate(65%, 0%);
+          transform: translate(65%, 0%);
+  width: 30vw;
+  line-height: 20px;
+}
+
+body main article.splash .right .splashSpot .cls-1 {
+  fill: #26180a10;
+  stroke: #00000000;
+}
+
+body main article.splash .right .splashSpot .cls-1 tspan {
+  fill: #26180a2a;
+}
+
+body main article.splash .right .splashSpot .cls-2 {
+  fill: #231f20d5;
+  stroke: #00000000;
+}
+
+body main article.splash .right .splashSpot .cls-3 {
+  fill: #231f20a1;
+  stroke: #00000000;
 }
 
 body main article.splash .right .splashPortfolioName {
@@ -1504,12 +1540,13 @@ body main article.splash .right .splashPortfolioName {
 body main article.splash .right .splashPortfolioName svg {
   width: 50vw;
   float: right;
-  margin-right: 40px;
+  margin-right: 150px;
 }
 
 body main article.splash .right .splashPortfolioName svg .fullstack {
-  fill: #26180abb;
-  font-size: 5px;
+  font-family: 'Caveat', cursive;
+  fill: #26180ac7;
+  font-size: 6.5px;
 }
 
 body main article.splash .right .splashPortfolioName svg .fullstack .fullstacka {
@@ -1531,17 +1568,28 @@ body main article.splash .right .splashArrow svg {
   height: 100%;
   margin: 0px 70px;
   margin-top: 0px;
+  stroke-width: 4px;
   -webkit-animation-name: upDown;
           animation-name: upDown;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
+  -webkit-filter: drop-shadow(3px 5px 3px rgba(92, 92, 92, 0.6));
+          filter: drop-shadow(3px 5px 3px rgba(92, 92, 92, 0.6));
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+  margin-top: 0px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  stroke-width: 1px;
+}
+
+body main article.info {
+  border-radius: 20px;
 }
 
 body main article.info .infoCard {
   position: relative;
-  width: calc(100% -  80px);
+  width: calc(100% - 80px);
   height: auto;
   margin: 40px;
   padding: 10px;
@@ -1552,11 +1600,11 @@ body main article.info .infoCard {
 }
 
 body main article.info .infoCard .profile {
-  width: calc(100% -  40px);
+  width: calc(100% - 40px);
   margin: 20px;
   background-color: #f1f1f1;
   border-radius: 50%;
-  padding-top: calc(100% -  40px);
+  padding-top: calc(100% - 40px);
   background: url("../img/abhayIllustration.jpg");
   background-size: 100%;
 }
@@ -1570,7 +1618,7 @@ body main .scrollHeader {
 }
 
 body main .scrollHeader .menu h5 {
-  margin: 10px 20px;
+  margin: 0px 20px;
   text-align: center;
   color: #26180aa4;
 }
@@ -1579,7 +1627,6 @@ body main .portfolioSection {
   width: calc(100vw - 80px);
   margin: 40px;
   border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.02);
 }
 
 body main .right-diagonal-1 {
@@ -1593,36 +1640,56 @@ body main .right-diagonal-1 {
 @-webkit-keyframes upDown {
   0% {
     margin-top: 0px;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   25% {
     margin-top: 40px;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   50% {
     margin-top: 0px;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   75% {
     margin-top: 40px;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   100% {
     margin-top: 0px;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
 @keyframes upDown {
   0% {
     margin-top: 0px;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   25% {
     margin-top: 40px;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   50% {
     margin-top: 0px;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   75% {
     margin-top: 40px;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   100% {
     margin-top: 0px;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 

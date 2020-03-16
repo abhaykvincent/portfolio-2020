@@ -1,232 +1,329 @@
 @import 'vendor/hamburger';
-*{
+@import url('https://fonts.googleapis.com/css?family=Caveat&display=swap');
+
+* {
     margin: 0px;
-    padding:0px;
+    padding: 0px;
     box-sizing: border-box;
     transition-duration: 0.2s;
-    &:hover{
-    transition-duration: 0.1s;
-    transition-timing-function: ease-in-out;
+
+    &:hover {
+        transition-duration: 0.1s;
+        transition-timing-function: ease-in-out;
     }
 }
-h3{
+
+h3 {
     font-size: 20px;
 }
-body{
+
+body {
     background-color: rgb(231, 231, 231);
-    header{
-        width: 100vw;
+    width:  100%;
+
+    header {
+        margin-top: 0px;
+        width: 100%;
         height: 100px;
-        .logo{
+
+        .logo {
             height: 100%;
             padding: 30px 40px;
-            img{
+
+            img {
                 height: 100%
             }
         }
-        .roles{
+
+        .roles {
             height: 100%;
-            .role{
+
+            .role {
                 cursor: pointer;
                 float: right;
                 position: relative;
                 top: 50%;
-                padding: 5px 20px;
-                margin: auto 0px;
-                margin-left: 20px;
+                margin: auto 40px;
                 transform: translateY(-50%);
                 display: inline-block;
                 border-bottom: 2px solid #26180a00;
-                &.role-active,&:hover{
+
+                &.role-active,
+                &:hover {
                     border-bottom: 2px solid #26180a;
                 }
-                &:hover + .role{
-                border-bottom: 2px solid #26180a00;
+
+                &:hover+.role {
+                    border-bottom: 2px solid #26180a00;
                 }
-                &:active{
+
+                &:active {
                     padding-bottom: 3px;
                     border-bottom: 4px solid #26180a;
-                    
+
                 }
             }
         }
-        .hamburger{
+
+        .hamburger {
+            position: sticky;
             float: right;
             height: 100%;
-            padding: 30px 40px;
+            transform: translateX(-40px);
         }
     }
-    main{
+
+    main {
         width: 100vw;
-        
-        article{
+
+        article {
 
             position: relative;
             width: 100vw;
             height: 100vh;
-            &.splash{
+
+            &.splash {
                 position: relative;
                 width: 100vw;
-                height: 100%;
-                .left{
-                    height:100vh;
-                    .circles{
+                height: 100vh;
+
+                .left {
+                    height: 100vh;
+
+                    .circles {
                         position: sticky;
                         top: 50vh;
                         transform: translateY(-50%);
                         width: 200px;
-                        .circle{
+
+                        .circle {
                             display: block;
                             position: relative;
-                            width: 40px;
-                            height: 40px;
+                            width: 60px;
+                            height: 60px;
                             margin: 40px;
-                            line-height: 40px;
+                            font-size: 20px;
+                            line-height: 60px;
                             text-align: center;
                             background-color: rgb(230, 230, 230);
                             border-radius: 50%;
                             filter: drop-shadow(-3px -3px 5px #ffffff) drop-shadow(2px 2px 2px #b3b3b3);
                             transition-duration: 0.05s;
-                            
-                            &:hover{
+
+                            &:hover {
                                 filter: drop-shadow(-3px -3px 6px #ffffff) drop-shadow(3px 3px 2px #b3b3b3);
                                 transform: scale(1.05);
                                 transition-duration: 0.1s;
                             }
-                            &:active{
+
+                            &:active {
                                 filter: none;
-                                line-height: 42px;
-                            
+                                line-height: 55px;
+                                background-color: rgba(0, 0, 0, 0.04);
+                                border-top: 1px solid rgba(0, 0, 0, 0.1);
+
                             }
-                            .circleLabel{
+
+                            .circleLabel {
                                 display: block;
                             }
                         }
                     }
                 }
-                .right{
+
+                .right {
                     background-color: rgba(0, 0, 0, 0.00);
-                    .splashPortfolioName{
+
+                    .splashSpot {
+                        position: absolute;
+                        right: 0px;
+                        top: calc(40vh - 20vw);
+                        transform: translate(65%, 0%);
+                        width: 30vw;
+                        line-height: 20px;
+
+                        .cls-1 {
+                            fill: #26180a10;
+                            stroke: #00000000;
+
+                            tspan {
+                                fill: #26180a2a;
+                            }
+
+                        }
+
+                        .cls-2 {
+                            fill: #231f20d5;
+                            stroke: #00000000
+                        }
+
+                        .cls-3 {
+                            fill: #231f20a1;
+                            stroke: #00000000
+                        }
+                    }
+
+                    .splashPortfolioName {
                         position: relative;
                         top: calc(40vh - 100px);
                         right: 0px;
                         transform: translateY(-50%);
                         width: 100%;
                         height: 100px;
-                        svg{
+
+                        svg {
                             width: 50vw;
                             float: right;
-                            margin-right: 40px;
-                            .fullstack{
-                                fill: #26180abb;
-                                font-size: 5px;
-                                .fullstacka{
+                            margin-right: 150px;
+
+                            .fullstack {
+                                font-family: 'Caveat', cursive;
+                                fill: #26180ac7;
+                                font-size: 6.5px;
+
+                                .fullstacka {
                                     fill: #26180a9c;
                                 }
-                                .fullstackb{
+
+                                .fullstackb {
                                     fill: #26180a7a;
                                 }
                             }
                         }
                     }
-                    .splashArrow{
+
+                    .splashArrow {
                         position: relative;
                         bottom: -100px;
                         height: 100px;
-                        svg{
+
+                        svg {
                             float: right;
                             height: 100%;
                             margin: 0px 70px;
                             margin-top: 0px;
+                            stroke-width: 4px;
                             animation-name: upDown;
                             animation-duration: 3s;
+                            filter: drop-shadow(3px 5px 3px rgba(92, 92, 92, 0.6));
                             animation-iteration-count: infinite;
+                            margin-top: 0px;
+                            transform: scale(1);
+                            stroke-width: 1px;
                         }
                     }
                 }
             }
-            &.info{
-                .infoCard{
+
+            &.info {
+                border-radius: 20px;
+
+                .infoCard {
                     position: relative;
-                    width:calc(100% -  80px);
+                    width: calc(100% - 80px);
                     height: auto;
                     margin: 40px;
                     padding: 10px;
                     border-radius: 20px;
                     background-color: rgb(230, 230, 230);
                     filter: drop-shadow(-3px -3px 5px #ffffff) drop-shadow(2px 2px 2px #b3b3b3);
-                    .profile{
-                        width: calc(100% -  40px);
+
+                    .profile {
+                        width: calc(100% - 40px);
                         margin: 20px;
                         background-color: rgb(241, 241, 241);
                         border-radius: 50%;
-                        padding-top: calc(100% -  40px);
+                        padding-top: calc(100% - 40px);
                         background: url('../img/abhayIllustration.jpg');
                         background-size: 100%;
                     }
-                    .profileInfo{
+
+                    .profileInfo {
                         text-align: center;
                     }
                 }
             }
         }
-        .scrollHeader{
+
+        .scrollHeader {
             margin: 0px 40px;
-            .menu{
-                h5{
-                    margin: 10px 20px;
+
+            .menu {
+                h5 {
+                    margin: 0px 20px;
                     text-align: center;
                     color: #26180aa4;
                 }
             }
         }
-        .portfolioSection{
+
+        .portfolioSection {
             width: calc(100vw - 80px);
-            margin:40px;
+            margin: 40px;
             border-radius: 10px;
-            background-color: rgba(0, 0, 0, 0.02);
         }
+
         /* right-diagonal-1 */
-        .right-diagonal-1{
+        .right-diagonal-1 {
             width: 100vw;
             height: 100vh;
             clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
-            background-color: rgba(0, 0, 0,0.05);
+            background-color: rgba(0, 0, 0, 0.05);
         }
     }
 }
+
 @keyframes upDown {
-    0% {margin-top: 0px;}
-    25% {margin-top: 40px;}
-    50% {margin-top: 0px;}
-    75% {margin-top: 40px;}
-    100% {margin-top: 0px;}
-  }
+    0% {
+        margin-top: 0px;
+        transform: scale(1);
+    }
+
+    25% {
+        margin-top: 40px;
+        transform: scale(1.1);
+    }
+
+    50% {
+        margin-top: 0px;
+        transform: scale(1);
+    }
+
+    75% {
+        margin-top: 40px;
+        transform: scale(1.1);
+    }
+
+    100% {
+        margin-top: 0px;
+        transform: scale(1);
+    }
+}
 
 //Text Reweal
 
-  
-  .container {
-    font-size:40px;
+
+.container {
+    font-size: 40px;
     font-family: 'Red Hat Display', sans-serif;
-    letter-spacing:1.5px;
+    letter-spacing: 1.5px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width:600px;
-    height:40px;
-  }
-  
-  .container * {
-    display:inline-block;
-    overflow:hidden;
-    position:absolute;
-  }
-  
-  .bar {
-    width:3px;
-    height:49px;
-    position:absolute;
-    top:-1px;
-  }
+    width: 600px;
+    height: 40px;
+}
+
+.container * {
+    display: inline-block;
+    overflow: hidden;
+    position: absolute;
+}
+
+.bar {
+    width: 3px;
+    height: 49px;
+    position: absolute;
+    top: -1px;
+}
