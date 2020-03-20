@@ -3,22 +3,23 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
 </head>
 
 <body>
 
     <header class="grid-x">
-        <div class="logo large-2 medium-2  small-3">
+        <div class="logo large-2 medium-2  small-6">
             <img src="src/img/logo.png" alt="" srcset="">
         </div>
-        <div class=" large-9 medium-9 small-6 grid-x">
+        <div class=" large-9 medium-9 small-0 hide-for-small-only grid-x">
             <div class="roles large-12 medium-12 small-12">
                 <h3 class="role">Illustration</h3>
                 <h3 class="role role-active">Web</h3>
             </div>
         </div>
-        <div class="large-1  medium-1 small-3">
+        <div class="large-1  medium-1 small-6">
             <button class="hamburger hamburger--emphatic" type="button">
                 <span class="hamburger-box">
                     <span class="hamburger-inner"></span>
@@ -28,32 +29,33 @@
     </header>
     <main>
         <article class="splash grid-x">
-
             <div class="large-2  medium-2  left hide-for-small-only">
                 <div class="circles">
-                    <div class="circle"><i class="fab fa-instagram"> </i></div>
-                    <div class="circle"><i class="fab fa-linkedin-in"></i></div>
-                    <div class="circle"><i class="fab fa-facebook-f"></i></div>
-                    <div class="circle"><i class="fas fa-at"></i></div>
+                    <a href="http://www.instagram.com/fullstack_lad" class="circle"><i class="fab fa-instagram"> </i></a>
+                    <a href="http://www.linkedin.com/in/abhay.vincent" class="circle"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="http://www.facebook.com/abhay.vincent" class="circle"><i class="fab fa-facebook-f"></i></a>
+                    <a href="" class="circle"><i class="fas fa-at"></i></a>
                 </div>
             </div>
 
             <div class="large-10 medium-10 small-12 grid-x right">
                 <div class="splashSpot large-12">
-                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 13.388 17.122">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1"
+                        viewBox="0 0 13.388 17.122">
                         <defs>
-                          <style>
-                            .cls-1 {
-                              font-size: 7px;
-                              fill: #231f20;
-                              font-family: Blenny-Black, Blenny;
-                              font-weight: 800;
-                            }
-                          </style>
+                            <style>
+                                .cls-1 {
+                                    font-size: 7px;
+                                    fill: #231f20;
+                                    font-family: Blenny-Black, Blenny;
+                                    font-weight: 800;
+                                }
+                            </style>
                         </defs>
                         <title>Untitled-1</title>
-                        <text class="cls-1" transform="translate(5.828 17.122) rotate(-90)">20<tspan class="twenty">20</tspan></text>
-                      </svg>
+                        <text class="cls-1" transform="translate(5.828 17.122) rotate(-90)">20<tspan class="twenty">20
+                            </tspan></text>
+                    </svg>
                 </div>
                 <div class="splashPortfolioName large-12">
                     <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
@@ -126,7 +128,7 @@
                         <g class="cls-2">
                             <text class="cls-3 portfolio" transform="translate(-83 13.057)">Portfolio</text>
                         </g>
-                        <rect class="cls-8 bar" x="78.331" width="2" height="13" />
+                        <rect class="cls-8 bar" x="78.331" width="2" height="15" />
                         <g class="cls-9">
                             <text class="cls-10 abhayVincent" transform="translate(80 13.057)">Abhay Vincent</text>
                         </g>
@@ -138,7 +140,23 @@
                         </g>
                     </svg>
                 </div>
-                <div class="splashArrow large-12 medium-12 small-12">
+                <div class="left small-12 show-for-small hide-for-medium hide-for-large">
+                  <div class="circlesSmall grid-x">
+                    <div class="small-3">
+                      <div class="circleSmall small-3"><i class="fab fa-instagram"> </i></div>
+                    </div>
+                    <div class="small-3">
+                      <div class="circleSmall small-3"><i class="fab fa-facebook-f"></i></div>
+                    </div>
+                    <div class="small-3">
+                      <div class="circleSmall small-3"><i class="fas fa-at"></i></div>
+                    </div>
+                    <div class="small-3">
+                      <div class="circleSmall small-3"><i class="fab fa-linkedin-in"></i></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="splashArrow large-12 medium-12 small-12 hide-for-small-only">
                     <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 11.928 67.28">
                         <defs>
                             <style>
@@ -155,22 +173,499 @@
                 </div>
             </div>
         </article>
-        
+
         <article class="portfolioSection info grid-x">
             <aside class="large-3 medium-6 small-12 ">
                 <div class="infoCard">
                     <div class="profile"></div>
                     <div class="profileInfo">
-                        <h4>Abhay Vincent</h4>
                         <p>Full-stack Developer</p>
                         <p>+1 365 688 2276</p>
                     </div>
                 </div>
             </aside>
+            <main class="info-main large-9 medium-6 small-12">
+                <h1 class="poetry"><i class="fas fa-quote-left"></i>Code is Poetry<i class="fas fa-quote-right"></i>
+                </h1>
+                <h2 class="info-name">Abhay Vincent</h1>
+                    <h4 class="info-description">Im a Fullstack developer, Digital artist, Dreamer and Im here to create
+                        meaninful and lasting relationship with my clients.
+                    </h4>
+                    <a class="view-projects" href=""><i class="fas fa-angle-down"></i> View Projects</a>
+            </main>
         </article>
         <article class="portfolioSection skills">
+            <div class="web-skills grid-x">
+                <h2 class="web-skills-label skills-label large-12 medium-12 small-12">Web SKILLS</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" class="large-2 medium-4 small-6 skill-pie" id="Layer_1" data-name="Layer 1" viewBox="0 0 45.915 60.29">
+                    <defs>
+                    <style>
+                        .cls-1, .cls-2, .cls-8 {
+                        fill: #231f20;
+                        }
+                
+                        .cls-1 {
+                        stroke: #231f20;
+                        stroke-miterlimit: 10;
+                        stroke-width: 0.591px;
+                        }
+                
+                        .cls-2 {
+                        font-size: 4.4px;
+                        }
+                
+                        .cls-2, .cls-8 {
+                        font-family: MyriadPro-Regular, Myriad Pro;
+                        }
+                
+                        .cls-3 {
+                        letter-spacing: -0.026em;
+                        }
+                
+                        .cls-4 {
+                        letter-spacing: -0.01em;
+                        }
+                
+                        .cls-5 {
+                        letter-spacing: -0.004em;
+                        }
+                
+                        .cls-6 {
+                        letter-spacing: 0.018em;
+                        }
+                
+                        .cls-7 {
+                        letter-spacing: 0.004em;
+                        }
+                
+                        .cls-8 {
+                        font-size: 23.238px;
+                        }
+                    </style>
+                    </defs>
+                    <title>Untitled-1</title>
+                    <g>
+                    <path id="lvl9" class="cls-1" d="M117.424,147.688a18.054,18.054,0,0,1,4.971-8.875.639.639,0,0,0,.076-.833l-1.849-2.544a.641.641,0,0,0-.954-.1,22.494,22.494,0,0,0-6.448,11.108.643.643,0,0,0,.43.757l2.954.96A.639.639,0,0,0,117.424,147.688Z" transform="translate(-112.124 -128.884)"/>
+                    <path id="lvl8" class="cls-1" d="M116.969,151.71q0-.675.049-1.337a.635.635,0,0,0-.434-.655l-3.02-.981a.637.637,0,0,0-.832.528,22.442,22.442,0,0,0,1.517,10.909.643.643,0,0,0,.794.362l2.955-.96a.639.639,0,0,0,.385-.864A17.965,17.965,0,0,1,116.969,151.71Z" transform="translate(-112.124 -128.884)"/>
+                    <path id="lvl7" class="cls-1" d="M118.886,160.848l-3.025.983a.64.64,0,0,0-.366.917,22.634,22.634,0,0,0,7.173,7.717.642.642,0,0,0,.871-.162l1.836-2.527a.638.638,0,0,0-.176-.911,18.254,18.254,0,0,1-5.575-5.738A.634.634,0,0,0,118.886,160.848Z" transform="translate(-112.124 -128.884)"/>
+                    <path id="lvl4" class="cls-1" d="M145.625,167.324l1.837,2.528a.641.641,0,0,0,.889.149,22.647,22.647,0,0,0,6.4-7.079.64.64,0,0,0-.363-.921l-3.034-.986a.634.634,0,0,0-.735.273,18.236,18.236,0,0,1-4.839,5.14A.639.639,0,0,0,145.625,167.324Z" transform="translate(-112.124 -128.884)"/>
+                    <path id="lvl2" class="cls-1" d="M153.694,147.978l2.95-.959a.642.642,0,0,0,.428-.761,22.486,22.486,0,0,0-5.807-10.337.641.641,0,0,0-.97.081l-1.858,2.558a.636.636,0,0,0,.056.811,18.05,18.05,0,0,1,4.383,8.137A.641.641,0,0,0,153.694,147.978Z" transform="translate(-112.124 -128.884)"/>
+                    <path id="lvl6" class="cls-1" d="M135.17,169.824h0a18.206,18.206,0,0,1-7.6-1.656.636.636,0,0,0-.785.2l-1.874,2.579a.639.639,0,0,0,.224.946,22.507,22.507,0,0,0,10.04,2.348h0Z" transform="translate(-112.124 -128.884)"/>
+                    <path id="lvl3" class="cls-1" d="M156.757,148.543l-3.015.98a.638.638,0,0,0-.436.667c.042.5.066,1.008.066,1.52a17.982,17.982,0,0,1-1.484,7.173.639.639,0,0,0,.382.87l2.954.96a.641.641,0,0,0,.79-.357,22.4,22.4,0,0,0,1.729-8.646,22.645,22.645,0,0,0-.154-2.644A.637.637,0,0,0,156.757,148.543Z" transform="translate(-112.124 -128.884)"/>
+                    <path id="lvl10" class="cls-1" d="M123.552,136.943a.639.639,0,0,0,.9.134A18.164,18.164,0,0,1,135.17,133.6h0v-4.417h0a22.482,22.482,0,0,0-13.318,4.346.642.642,0,0,0-.134.894Z" transform="translate(-112.124 -128.884)"/>
+                    <path id="lvl1" class="cls-1" d="M137.229,133.716a18.16,18.16,0,0,1,9.279,3.829.639.639,0,0,0,.917-.117l1.837-2.529a.642.642,0,0,0-.116-.88,22.487,22.487,0,0,0-11.795-4.73.643.643,0,0,0-.7.642v3.154A.638.638,0,0,0,137.229,133.716Z" transform="translate(-112.124 -128.884)"/>
+                    <path id="lvl5" class="cls-1" d="M146.148,170.569l-1.857-2.555a.637.637,0,0,0-.81-.188,18.128,18.128,0,0,1-6.252,1.878.637.637,0,0,0-.574.631v3.153a.643.643,0,0,0,.7.643,22.449,22.449,0,0,0,8.592-2.624A.641.641,0,0,0,146.148,170.569Z" transform="translate(-112.124 -128.884)"/>
+                    </g>
+                    <text class="skill-label" transform="translate(0 54.571)" x="50%" y="0%" dominant-baseline="middle" text-anchor="middle">Front-end Developing</text> 
+                    
+                    <text class="skill-level" transform="translate(19 28)">3</text>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="large-2 medium-4 small-6 skill-pie" id="Layer_1" data-name="Layer 1" viewBox="0 0 45.915 60.29">
+                    <defs>
+                    <style>
+                        .cls-1, .cls-2, .cls-8 {
+                        fill: #231f20;
+                        }
+                
+                        .cls-1 {
+                        stroke: #231f20;
+                        stroke-miterlimit: 10;
+                        stroke-width: 0.591px;
+                        }
+                
+                        .cls-2 {
+                        font-size: 4.4px;
+                        }
+                
+                        .cls-2, .cls-8 {
+                        font-family: MyriadPro-Regular, Myriad Pro;
+                        }
+                
+                        .cls-3 {
+                        letter-spacing: -0.026em;
+                        }
+                
+                        .cls-4 {
+                        letter-spacing: -0.01em;
+                        }
+                
+                        .cls-5 {
+                        letter-spacing: -0.004em;
+                        }
+                
+                        .cls-6 {
+                        letter-spacing: 0.018em;
+                        }
+                
+                        .cls-7 {
+                        letter-spacing: 0.004em;
+                        }
+                
+                        .cls-8 {
+                        font-size: 23.238px;
+                        }
+                    </style>
+                    </defs>
+                    <title>Untitled-1</title>
+                    <g>
+                    <path id="lvl9" class="cls-1" d="M117.424,147.688a18.054,18.054,0,0,1,4.971-8.875.639.639,0,0,0,.076-.833l-1.849-2.544a.641.641,0,0,0-.954-.1,22.494,22.494,0,0,0-6.448,11.108.643.643,0,0,0,.43.757l2.954.96A.639.639,0,0,0,117.424,147.688Z" transform="translate(-112.124 -128.884)"/>
+                    <path id="lvl8" class="cls-1" d="M116.969,151.71q0-.675.049-1.337a.635.635,0,0,0-.434-.655l-3.02-.981a.637.637,0,0,0-.832.528,22.442,22.442,0,0,0,1.517,10.909.643.643,0,0,0,.794.362l2.955-.96a.639.639,0,0,0,.385-.864A17.965,17.965,0,0,1,116.969,151.71Z" transform="translate(-112.124 -128.884)"/>
+                    <path id="lvl7" class="cls-1" d="M118.886,160.848l-3.025.983a.64.64,0,0,0-.366.917,22.634,22.634,0,0,0,7.173,7.717.642.642,0,0,0,.871-.162l1.836-2.527a.638.638,0,0,0-.176-.911,18.254,18.254,0,0,1-5.575-5.738A.634.634,0,0,0,118.886,160.848Z" transform="translate(-112.124 -128.884)"/>
+                    <path id="lvl4" class="cls-1" d="M145.625,167.324l1.837,2.528a.641.641,0,0,0,.889.149,22.647,22.647,0,0,0,6.4-7.079.64.64,0,0,0-.363-.921l-3.034-.986a.634.634,0,0,0-.735.273,18.236,18.236,0,0,1-4.839,5.14A.639.639,0,0,0,145.625,167.324Z" transform="translate(-112.124 -128.884)"/>
+                    <path id="lvl2" class="cls-1" d="M153.694,147.978l2.95-.959a.642.642,0,0,0,.428-.761,22.486,22.486,0,0,0-5.807-10.337.641.641,0,0,0-.97.081l-1.858,2.558a.636.636,0,0,0,.056.811,18.05,18.05,0,0,1,4.383,8.137A.641.641,0,0,0,153.694,147.978Z" transform="translate(-112.124 -128.884)"/>
+                    <path id="lvl6" class="cls-1" d="M135.17,169.824h0a18.206,18.206,0,0,1-7.6-1.656.636.636,0,0,0-.785.2l-1.874,2.579a.639.639,0,0,0,.224.946,22.507,22.507,0,0,0,10.04,2.348h0Z" transform="translate(-112.124 -128.884)"/>
+                    <path id="lvl3" class="cls-1" d="M156.757,148.543l-3.015.98a.638.638,0,0,0-.436.667c.042.5.066,1.008.066,1.52a17.982,17.982,0,0,1-1.484,7.173.639.639,0,0,0,.382.87l2.954.96a.641.641,0,0,0,.79-.357,22.4,22.4,0,0,0,1.729-8.646,22.645,22.645,0,0,0-.154-2.644A.637.637,0,0,0,156.757,148.543Z" transform="translate(-112.124 -128.884)"/>
+                    <path id="lvl10" class="cls-1" d="M123.552,136.943a.639.639,0,0,0,.9.134A18.164,18.164,0,0,1,135.17,133.6h0v-4.417h0a22.482,22.482,0,0,0-13.318,4.346.642.642,0,0,0-.134.894Z" transform="translate(-112.124 -128.884)"/>
+                    <path id="lvl1" class="cls-1" d="M137.229,133.716a18.16,18.16,0,0,1,9.279,3.829.639.639,0,0,0,.917-.117l1.837-2.529a.642.642,0,0,0-.116-.88,22.487,22.487,0,0,0-11.795-4.73.643.643,0,0,0-.7.642v3.154A.638.638,0,0,0,137.229,133.716Z" transform="translate(-112.124 -128.884)"/>
+                    <path id="lvl5" class="cls-1" d="M146.148,170.569l-1.857-2.555a.637.637,0,0,0-.81-.188,18.128,18.128,0,0,1-6.252,1.878.637.637,0,0,0-.574.631v3.153a.643.643,0,0,0,.7.643,22.449,22.449,0,0,0,8.592-2.624A.641.641,0,0,0,146.148,170.569Z" transform="translate(-112.124 -128.884)"/>
+                    </g>
+                    <text class="skill-label" transform="translate(0 54.571)" x="50%" y="0%" dominant-baseline="middle" text-anchor="middle">Front-end Developing</text> 
+                    
+                    <text class="skill-level" transform="translate(19 28)">3</text>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="large-2 medium-4 small-6 skill-pie" id="Layer_1" data-name="Layer 1" viewBox="0 0 45.915 60.29">
+                    <defs>
+                    <style>
+                        .cls-1, .cls-2, .cls-8 {
+                        fill: #231f20;
+                        }
+                
+                        .cls-1 {
+                        stroke: #231f20;
+                        stroke-miterlimit: 10;
+                        stroke-width: 0.591px;
+                        }
+                
+                        .cls-2 {
+                        font-size: 4.4px;
+                        }
+                
+                        .cls-2, .cls-8 {
+                        font-family: MyriadPro-Regular, Myriad Pro;
+                        }
+                
+                        .cls-3 {
+                        letter-spacing: -0.026em;
+                        }
+                
+                        .cls-4 {
+                        letter-spacing: -0.01em;
+                        }
+                
+                        .cls-5 {
+                        letter-spacing: -0.004em;
+                        }
+                
+                        .cls-6 {
+                        letter-spacing: 0.018em;
+                        }
+                
+                        .cls-7 {
+                        letter-spacing: 0.004em;
+                        }
+                
+                        .cls-8 {
+                        font-size: 23.238px;
+                        }
+                    </style>
+                    </defs>
+                    <title>Untitled-1</title>
+                    <g>
+                    <path id="lvl9" class="cls-1" d="M117.424,147.688a18.054,18.054,0,0,1,4.971-8.875.639.639,0,0,0,.076-.833l-1.849-2.544a.641.641,0,0,0-.954-.1,22.494,22.494,0,0,0-6.448,11.108.643.643,0,0,0,.43.757l2.954.96A.639.639,0,0,0,117.424,147.688Z" transform="translate(-112.124 -128.884)"/>
+                    <path id="lvl8" class="cls-1" d="M116.969,151.71q0-.675.049-1.337a.635.635,0,0,0-.434-.655l-3.02-.981a.637.637,0,0,0-.832.528,22.442,22.442,0,0,0,1.517,10.909.643.643,0,0,0,.794.362l2.955-.96a.639.639,0,0,0,.385-.864A17.965,17.965,0,0,1,116.969,151.71Z" transform="translate(-112.124 -128.884)"/>
+                    <path id="lvl7" class="cls-1" d="M118.886,160.848l-3.025.983a.64.64,0,0,0-.366.917,22.634,22.634,0,0,0,7.173,7.717.642.642,0,0,0,.871-.162l1.836-2.527a.638.638,0,0,0-.176-.911,18.254,18.254,0,0,1-5.575-5.738A.634.634,0,0,0,118.886,160.848Z" transform="translate(-112.124 -128.884)"/>
+                    <path id="lvl4" class="cls-1" d="M145.625,167.324l1.837,2.528a.641.641,0,0,0,.889.149,22.647,22.647,0,0,0,6.4-7.079.64.64,0,0,0-.363-.921l-3.034-.986a.634.634,0,0,0-.735.273,18.236,18.236,0,0,1-4.839,5.14A.639.639,0,0,0,145.625,167.324Z" transform="translate(-112.124 -128.884)"/>
+                    <path id="lvl2" class="cls-1" d="M153.694,147.978l2.95-.959a.642.642,0,0,0,.428-.761,22.486,22.486,0,0,0-5.807-10.337.641.641,0,0,0-.97.081l-1.858,2.558a.636.636,0,0,0,.056.811,18.05,18.05,0,0,1,4.383,8.137A.641.641,0,0,0,153.694,147.978Z" transform="translate(-112.124 -128.884)"/>
+                    <path id="lvl6" class="cls-1" d="M135.17,169.824h0a18.206,18.206,0,0,1-7.6-1.656.636.636,0,0,0-.785.2l-1.874,2.579a.639.639,0,0,0,.224.946,22.507,22.507,0,0,0,10.04,2.348h0Z" transform="translate(-112.124 -128.884)"/>
+                    <path id="lvl3" class="cls-1" d="M156.757,148.543l-3.015.98a.638.638,0,0,0-.436.667c.042.5.066,1.008.066,1.52a17.982,17.982,0,0,1-1.484,7.173.639.639,0,0,0,.382.87l2.954.96a.641.641,0,0,0,.79-.357,22.4,22.4,0,0,0,1.729-8.646,22.645,22.645,0,0,0-.154-2.644A.637.637,0,0,0,156.757,148.543Z" transform="translate(-112.124 -128.884)"/>
+                    <path id="lvl10" class="cls-1" d="M123.552,136.943a.639.639,0,0,0,.9.134A18.164,18.164,0,0,1,135.17,133.6h0v-4.417h0a22.482,22.482,0,0,0-13.318,4.346.642.642,0,0,0-.134.894Z" transform="translate(-112.124 -128.884)"/>
+                    <path id="lvl1" class="cls-1" d="M137.229,133.716a18.16,18.16,0,0,1,9.279,3.829.639.639,0,0,0,.917-.117l1.837-2.529a.642.642,0,0,0-.116-.88,22.487,22.487,0,0,0-11.795-4.73.643.643,0,0,0-.7.642v3.154A.638.638,0,0,0,137.229,133.716Z" transform="translate(-112.124 -128.884)"/>
+                    <path id="lvl5" class="cls-1" d="M146.148,170.569l-1.857-2.555a.637.637,0,0,0-.81-.188,18.128,18.128,0,0,1-6.252,1.878.637.637,0,0,0-.574.631v3.153a.643.643,0,0,0,.7.643,22.449,22.449,0,0,0,8.592-2.624A.641.641,0,0,0,146.148,170.569Z" transform="translate(-112.124 -128.884)"/>
+                    </g>
+                    <text class="skill-label" transform="translate(0 54.571)" x="50%" y="0%" dominant-baseline="middle" text-anchor="middle">Front-end Developing</text> 
+                    
+                    <text class="skill-level" transform="translate(19 28)">3</text>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="large-2 medium-4 small-6 skill-pie" id="Layer_1" data-name="Layer 1" viewBox="0 0 45.915 60.29">
+                    <defs>
+                    <style>
+                        .cls-1, .cls-2, .cls-8 {
+                        fill: #231f20;
+                        }
+                
+                        .cls-1 {
+                        stroke: #231f20;
+                        stroke-miterlimit: 10;
+                        stroke-width: 0.591px;
+                        }
+                
+                        .cls-2 {
+                        font-size: 4.4px;
+                        }
+                
+                        .cls-2, .cls-8 {
+                        font-family: MyriadPro-Regular, Myriad Pro;
+                        }
+                
+                        .cls-3 {
+                        letter-spacing: -0.026em;
+                        }
+                
+                        .cls-4 {
+                        letter-spacing: -0.01em;
+                        }
+                
+                        .cls-5 {
+                        letter-spacing: -0.004em;
+                        }
+                
+                        .cls-6 {
+                        letter-spacing: 0.018em;
+                        }
+                
+                        .cls-7 {
+                        letter-spacing: 0.004em;
+                        }
+                
+                        .cls-8 {
+                        font-size: 23.238px;
+                        }
+                    </style>
+                    </defs>
+                    <title>Untitled-1</title>
+                    <g>
+                    <path id="lvl9" class="cls-1" d="M117.424,147.688a18.054,18.054,0,0,1,4.971-8.875.639.639,0,0,0,.076-.833l-1.849-2.544a.641.641,0,0,0-.954-.1,22.494,22.494,0,0,0-6.448,11.108.643.643,0,0,0,.43.757l2.954.96A.639.639,0,0,0,117.424,147.688Z" transform="translate(-112.124 -128.884)"/>
+                    <path id="lvl8" class="cls-1" d="M116.969,151.71q0-.675.049-1.337a.635.635,0,0,0-.434-.655l-3.02-.981a.637.637,0,0,0-.832.528,22.442,22.442,0,0,0,1.517,10.909.643.643,0,0,0,.794.362l2.955-.96a.639.639,0,0,0,.385-.864A17.965,17.965,0,0,1,116.969,151.71Z" transform="translate(-112.124 -128.884)"/>
+                    <path id="lvl7" class="cls-1" d="M118.886,160.848l-3.025.983a.64.64,0,0,0-.366.917,22.634,22.634,0,0,0,7.173,7.717.642.642,0,0,0,.871-.162l1.836-2.527a.638.638,0,0,0-.176-.911,18.254,18.254,0,0,1-5.575-5.738A.634.634,0,0,0,118.886,160.848Z" transform="translate(-112.124 -128.884)"/>
+                    <path id="lvl4" class="cls-1" d="M145.625,167.324l1.837,2.528a.641.641,0,0,0,.889.149,22.647,22.647,0,0,0,6.4-7.079.64.64,0,0,0-.363-.921l-3.034-.986a.634.634,0,0,0-.735.273,18.236,18.236,0,0,1-4.839,5.14A.639.639,0,0,0,145.625,167.324Z" transform="translate(-112.124 -128.884)"/>
+                    <path id="lvl2" class="cls-1" d="M153.694,147.978l2.95-.959a.642.642,0,0,0,.428-.761,22.486,22.486,0,0,0-5.807-10.337.641.641,0,0,0-.97.081l-1.858,2.558a.636.636,0,0,0,.056.811,18.05,18.05,0,0,1,4.383,8.137A.641.641,0,0,0,153.694,147.978Z" transform="translate(-112.124 -128.884)"/>
+                    <path id="lvl6" class="cls-1" d="M135.17,169.824h0a18.206,18.206,0,0,1-7.6-1.656.636.636,0,0,0-.785.2l-1.874,2.579a.639.639,0,0,0,.224.946,22.507,22.507,0,0,0,10.04,2.348h0Z" transform="translate(-112.124 -128.884)"/>
+                    <path id="lvl3" class="cls-1" d="M156.757,148.543l-3.015.98a.638.638,0,0,0-.436.667c.042.5.066,1.008.066,1.52a17.982,17.982,0,0,1-1.484,7.173.639.639,0,0,0,.382.87l2.954.96a.641.641,0,0,0,.79-.357,22.4,22.4,0,0,0,1.729-8.646,22.645,22.645,0,0,0-.154-2.644A.637.637,0,0,0,156.757,148.543Z" transform="translate(-112.124 -128.884)"/>
+                    <path id="lvl10" class="cls-1" d="M123.552,136.943a.639.639,0,0,0,.9.134A18.164,18.164,0,0,1,135.17,133.6h0v-4.417h0a22.482,22.482,0,0,0-13.318,4.346.642.642,0,0,0-.134.894Z" transform="translate(-112.124 -128.884)"/>
+                    <path id="lvl1" class="cls-1" d="M137.229,133.716a18.16,18.16,0,0,1,9.279,3.829.639.639,0,0,0,.917-.117l1.837-2.529a.642.642,0,0,0-.116-.88,22.487,22.487,0,0,0-11.795-4.73.643.643,0,0,0-.7.642v3.154A.638.638,0,0,0,137.229,133.716Z" transform="translate(-112.124 -128.884)"/>
+                    <path id="lvl5" class="cls-1" d="M146.148,170.569l-1.857-2.555a.637.637,0,0,0-.81-.188,18.128,18.128,0,0,1-6.252,1.878.637.637,0,0,0-.574.631v3.153a.643.643,0,0,0,.7.643,22.449,22.449,0,0,0,8.592-2.624A.641.641,0,0,0,146.148,170.569Z" transform="translate(-112.124 -128.884)"/>
+                    </g>
+                    <text class="skill-label" transform="translate(0 54.571)" x="50%" y="0%" dominant-baseline="middle" text-anchor="middle">Front-end Developing</text> 
+                    
+                    <text class="skill-level" transform="translate(19 28)">3</text>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="large-2 medium-4 small-6 skill-pie" id="Layer_1" data-name="Layer 1" viewBox="0 0 45.915 60.29">
+                    <defs>
+                    <style>
+                        .cls-1, .cls-2, .cls-8 {
+                        fill: #231f20;
+                        }
+                
+                        .cls-1 {
+                        stroke: #231f20;
+                        stroke-miterlimit: 10;
+                        stroke-width: 0.591px;
+                        }
+                
+                        .cls-2 {
+                        font-size: 4.4px;
+                        }
+                
+                        .cls-2, .cls-8 {
+                        font-family: MyriadPro-Regular, Myriad Pro;
+                        }
+                
+                        .cls-3 {
+                        letter-spacing: -0.026em;
+                        }
+                
+                        .cls-4 {
+                        letter-spacing: -0.01em;
+                        }
+                
+                        .cls-5 {
+                        letter-spacing: -0.004em;
+                        }
+                
+                        .cls-6 {
+                        letter-spacing: 0.018em;
+                        }
+                
+                        .cls-7 {
+                        letter-spacing: 0.004em;
+                        }
+                
+                        .cls-8 {
+                        font-size: 23.238px;
+                        }
+                    </style>
+                    </defs>
+                    <title>Untitled-1</title>
+                    <g>
+                    <path id="lvl9" class="cls-1" d="M117.424,147.688a18.054,18.054,0,0,1,4.971-8.875.639.639,0,0,0,.076-.833l-1.849-2.544a.641.641,0,0,0-.954-.1,22.494,22.494,0,0,0-6.448,11.108.643.643,0,0,0,.43.757l2.954.96A.639.639,0,0,0,117.424,147.688Z" transform="translate(-112.124 -128.884)"/>
+                    <path id="lvl8" class="cls-1" d="M116.969,151.71q0-.675.049-1.337a.635.635,0,0,0-.434-.655l-3.02-.981a.637.637,0,0,0-.832.528,22.442,22.442,0,0,0,1.517,10.909.643.643,0,0,0,.794.362l2.955-.96a.639.639,0,0,0,.385-.864A17.965,17.965,0,0,1,116.969,151.71Z" transform="translate(-112.124 -128.884)"/>
+                    <path id="lvl7" class="cls-1" d="M118.886,160.848l-3.025.983a.64.64,0,0,0-.366.917,22.634,22.634,0,0,0,7.173,7.717.642.642,0,0,0,.871-.162l1.836-2.527a.638.638,0,0,0-.176-.911,18.254,18.254,0,0,1-5.575-5.738A.634.634,0,0,0,118.886,160.848Z" transform="translate(-112.124 -128.884)"/>
+                    <path id="lvl4" class="cls-1" d="M145.625,167.324l1.837,2.528a.641.641,0,0,0,.889.149,22.647,22.647,0,0,0,6.4-7.079.64.64,0,0,0-.363-.921l-3.034-.986a.634.634,0,0,0-.735.273,18.236,18.236,0,0,1-4.839,5.14A.639.639,0,0,0,145.625,167.324Z" transform="translate(-112.124 -128.884)"/>
+                    <path id="lvl2" class="cls-1" d="M153.694,147.978l2.95-.959a.642.642,0,0,0,.428-.761,22.486,22.486,0,0,0-5.807-10.337.641.641,0,0,0-.97.081l-1.858,2.558a.636.636,0,0,0,.056.811,18.05,18.05,0,0,1,4.383,8.137A.641.641,0,0,0,153.694,147.978Z" transform="translate(-112.124 -128.884)"/>
+                    <path id="lvl6" class="cls-1" d="M135.17,169.824h0a18.206,18.206,0,0,1-7.6-1.656.636.636,0,0,0-.785.2l-1.874,2.579a.639.639,0,0,0,.224.946,22.507,22.507,0,0,0,10.04,2.348h0Z" transform="translate(-112.124 -128.884)"/>
+                    <path id="lvl3" class="cls-1" d="M156.757,148.543l-3.015.98a.638.638,0,0,0-.436.667c.042.5.066,1.008.066,1.52a17.982,17.982,0,0,1-1.484,7.173.639.639,0,0,0,.382.87l2.954.96a.641.641,0,0,0,.79-.357,22.4,22.4,0,0,0,1.729-8.646,22.645,22.645,0,0,0-.154-2.644A.637.637,0,0,0,156.757,148.543Z" transform="translate(-112.124 -128.884)"/>
+                    <path id="lvl10" class="cls-1" d="M123.552,136.943a.639.639,0,0,0,.9.134A18.164,18.164,0,0,1,135.17,133.6h0v-4.417h0a22.482,22.482,0,0,0-13.318,4.346.642.642,0,0,0-.134.894Z" transform="translate(-112.124 -128.884)"/>
+                    <path id="lvl1" class="cls-1" d="M137.229,133.716a18.16,18.16,0,0,1,9.279,3.829.639.639,0,0,0,.917-.117l1.837-2.529a.642.642,0,0,0-.116-.88,22.487,22.487,0,0,0-11.795-4.73.643.643,0,0,0-.7.642v3.154A.638.638,0,0,0,137.229,133.716Z" transform="translate(-112.124 -128.884)"/>
+                    <path id="lvl5" class="cls-1" d="M146.148,170.569l-1.857-2.555a.637.637,0,0,0-.81-.188,18.128,18.128,0,0,1-6.252,1.878.637.637,0,0,0-.574.631v3.153a.643.643,0,0,0,.7.643,22.449,22.449,0,0,0,8.592-2.624A.641.641,0,0,0,146.148,170.569Z" transform="translate(-112.124 -128.884)"/>
+                    </g>
+                    <text class="skill-label" transform="translate(0 54.571)" x="50%" y="0%" dominant-baseline="middle" text-anchor="middle">Front-end Developing</text> 
+                    
+                    <text class="skill-level" transform="translate(19 28)">3</text>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="large-2 medium-4 small-6 skill-pie" id="Layer_1" data-name="Layer 1" viewBox="0 0 45.915 60.29">
+                    <defs>
+                    <style>
+                        .cls-1, .cls-2, .cls-8 {
+                        fill: #231f20;
+                        }
+                
+                        .cls-1 {
+                        stroke: #231f20;
+                        stroke-miterlimit: 10;
+                        stroke-width: 0.591px;
+                        }
+                
+                        .cls-2 {
+                        font-size: 4.4px;
+                        }
+                
+                        .cls-2, .cls-8 {
+                        font-family: MyriadPro-Regular, Myriad Pro;
+                        }
+                
+                        .cls-3 {
+                        letter-spacing: -0.026em;
+                        }
+                
+                        .cls-4 {
+                        letter-spacing: -0.01em;
+                        }
+                
+                        .cls-5 {
+                        letter-spacing: -0.004em;
+                        }
+                
+                        .cls-6 {
+                        letter-spacing: 0.018em;
+                        }
+                
+                        .cls-7 {
+                        letter-spacing: 0.004em;
+                        }
+                
+                        .cls-8 {
+                        font-size: 23.238px;
+                        }
+                    </style>
+                    </defs>
+                    <title>Untitled-1</title>
+                    <g>
+                    <path id="lvl9" class="cls-1" d="M117.424,147.688a18.054,18.054,0,0,1,4.971-8.875.639.639,0,0,0,.076-.833l-1.849-2.544a.641.641,0,0,0-.954-.1,22.494,22.494,0,0,0-6.448,11.108.643.643,0,0,0,.43.757l2.954.96A.639.639,0,0,0,117.424,147.688Z" transform="translate(-112.124 -128.884)"/>
+                    <path id="lvl8" class="cls-1" d="M116.969,151.71q0-.675.049-1.337a.635.635,0,0,0-.434-.655l-3.02-.981a.637.637,0,0,0-.832.528,22.442,22.442,0,0,0,1.517,10.909.643.643,0,0,0,.794.362l2.955-.96a.639.639,0,0,0,.385-.864A17.965,17.965,0,0,1,116.969,151.71Z" transform="translate(-112.124 -128.884)"/>
+                    <path id="lvl7" class="cls-1" d="M118.886,160.848l-3.025.983a.64.64,0,0,0-.366.917,22.634,22.634,0,0,0,7.173,7.717.642.642,0,0,0,.871-.162l1.836-2.527a.638.638,0,0,0-.176-.911,18.254,18.254,0,0,1-5.575-5.738A.634.634,0,0,0,118.886,160.848Z" transform="translate(-112.124 -128.884)"/>
+                    <path id="lvl4" class="cls-1" d="M145.625,167.324l1.837,2.528a.641.641,0,0,0,.889.149,22.647,22.647,0,0,0,6.4-7.079.64.64,0,0,0-.363-.921l-3.034-.986a.634.634,0,0,0-.735.273,18.236,18.236,0,0,1-4.839,5.14A.639.639,0,0,0,145.625,167.324Z" transform="translate(-112.124 -128.884)"/>
+                    <path id="lvl2" class="cls-1" d="M153.694,147.978l2.95-.959a.642.642,0,0,0,.428-.761,22.486,22.486,0,0,0-5.807-10.337.641.641,0,0,0-.97.081l-1.858,2.558a.636.636,0,0,0,.056.811,18.05,18.05,0,0,1,4.383,8.137A.641.641,0,0,0,153.694,147.978Z" transform="translate(-112.124 -128.884)"/>
+                    <path id="lvl6" class="cls-1" d="M135.17,169.824h0a18.206,18.206,0,0,1-7.6-1.656.636.636,0,0,0-.785.2l-1.874,2.579a.639.639,0,0,0,.224.946,22.507,22.507,0,0,0,10.04,2.348h0Z" transform="translate(-112.124 -128.884)"/>
+                    <path id="lvl3" class="cls-1" d="M156.757,148.543l-3.015.98a.638.638,0,0,0-.436.667c.042.5.066,1.008.066,1.52a17.982,17.982,0,0,1-1.484,7.173.639.639,0,0,0,.382.87l2.954.96a.641.641,0,0,0,.79-.357,22.4,22.4,0,0,0,1.729-8.646,22.645,22.645,0,0,0-.154-2.644A.637.637,0,0,0,156.757,148.543Z" transform="translate(-112.124 -128.884)"/>
+                    <path id="lvl10" class="cls-1" d="M123.552,136.943a.639.639,0,0,0,.9.134A18.164,18.164,0,0,1,135.17,133.6h0v-4.417h0a22.482,22.482,0,0,0-13.318,4.346.642.642,0,0,0-.134.894Z" transform="translate(-112.124 -128.884)"/>
+                    <path id="lvl1" class="cls-1" d="M137.229,133.716a18.16,18.16,0,0,1,9.279,3.829.639.639,0,0,0,.917-.117l1.837-2.529a.642.642,0,0,0-.116-.88,22.487,22.487,0,0,0-11.795-4.73.643.643,0,0,0-.7.642v3.154A.638.638,0,0,0,137.229,133.716Z" transform="translate(-112.124 -128.884)"/>
+                    <path id="lvl5" class="cls-1" d="M146.148,170.569l-1.857-2.555a.637.637,0,0,0-.81-.188,18.128,18.128,0,0,1-6.252,1.878.637.637,0,0,0-.574.631v3.153a.643.643,0,0,0,.7.643,22.449,22.449,0,0,0,8.592-2.624A.641.641,0,0,0,146.148,170.569Z" transform="translate(-112.124 -128.884)"/>
+                    </g>
+                    <text class="skill-label" transform="translate(0 54.571)" x="50%" y="0%" dominant-baseline="middle" text-anchor="middle"></text> 
+                    
+                    <text class="skill-level" transform="translate(19 28)"></text>
+                </svg>
+            </div>
+            <div class="software-skills grid-x">
+                <h2 class="software-skills-label skills-label large-12 medium-12 small-12 grid-x">Software SKILLS</h2>
+                
+            </div>
         </article>
-        <footer></footer>
+        <article class="projects">
+            <div class="project-dipslay grid-x" id="project-display">
+                <div class="projectAdv-image large-4 medium-12 small-12"></div>
+                <div class="projectAdv-details large-8 medium-12 small-12">
+                  <h1 class="projectAdv-Name"></h1>
+                  <p class="projectAdv-desc"></p>
+
+                  <p class="projectAdv-techs"></p>
+                  <div class="projectAdv-links grid-x">
+                    <div class="large-6 medium-6 small-12 projectAdv-visit">Visit Website <i class="fas fa-chevron-right"></i></div>
+                    <div class="large-6 medium-6 small-12 projectAdv-git">View Project on GitHub <i class="fab fa-github"></i></div>
+                  </div>
+
+                </div>
+            </div>
+            <h1 class="project-label">Projects</h1>
+            <div class="projects-list grid-x">
+                <div class=" large-3 medium-2 small-6">
+                    <div class="project">
+                        <div class="hover-info"></div>
+                    </div>
+                    <p class="project-desc">Mad Movies</p>
+                    <p class="project-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, tenetur?</p>
+                </div>
+                <div class=" large-3 medium-2 small-6">
+                    <div class="project">
+                        <div class="hover-info"></div>
+                    </div>
+                    <p class="project-desc">Mad Movies</p>
+                    <p class="project-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, tenetur?</p>
+                </div>
+                <div class=" large-3 medium-2 small-6">
+                    <div class="project">
+                        <div class="hover-info"></div>
+                    </div>
+                    <p class="project-desc">Mad Movies</p>
+                    <p class="project-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, tenetur?</p>
+                </div>
+                <div class=" large-3 medium-2 small-6">
+                    <div class="project">
+                        <div class="hover-info"></div>
+                    </div>
+                    <p class="project-desc">Mad Movies</p>
+                    <p class="project-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, tenetur?</p>
+                </div>
+                <div class=" large-3 medium-2 small-6">
+                    <div class="project">
+                        <div class="hover-info"></div>
+                    </div>
+                    <p class="project-desc">Mad Movies</p>
+                    <p class="project-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, tenetur?</p>
+                </div>
+                <div class=" large-3 medium-2 small-6">
+                    <div class="project">
+                        <div class="hover-info"></div>
+                    </div>
+                    <p class="project-desc">Mad Movies</p>
+                    <p class="project-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, tenetur?</p>
+                </div>
+                <div class=" large-3 medium-2 small-6">
+                    <div class="project">
+                        <div class="hover-info"></div>
+                    </div>
+                    <p class="project-desc">Mad Movies</p>
+                    <p class="project-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, tenetur?</p>
+                </div>
+                <div class=" large-3 medium-2 small-6">
+                    <div class="project">
+                        <div class="hover-info"></div>
+                    </div>
+                    <p class="project-desc">Mad Movies</p>
+                    <p class="project-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, tenetur?</p>
+                </div>
+            </div>
+        </article>
+        <footer class="grid-x">
+          <div class="grid-x">
+            <div class="large-4"></div>
+            <div class="large-4"></div>
+            <div class="large-4"></div>
+            <div class="large-12">
+              <p>Coptright 2020 | Abhay Vincent</p>
+            </div>
+          </div>
+        </footer>
     </main>
     <!-- Style -->
     <link rel="stylesheet" href="src/stylesheets/vendor/foundation.css">
