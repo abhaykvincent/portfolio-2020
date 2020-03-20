@@ -89,17 +89,50 @@ $(document).ready(function () {
         ease: 'ease-in'
     })
     //onclicks
+    gsap.to("aside.right-menu",{
+        x: 300,
+        duration: 0.25
+    });
     $("button.hamburger").click(function (e) { 
         e.preventDefault();
         if($(this).data("is-active")!=true)
         {
             $(this).addClass("is-active");
             $(this).data("is-active",!$(this).data("is-active"));
+
+            let hamTl = gsap.timeline();
+            hamTl.to(".splashPortfolioName",{
+                x: -200,
+                duration: 0.25
+            });
+            
+            hamTl.to("aside.right-menu",{
+                x: 0,
+                duration: 0.25
+            });
+            $(".roles").css("transform", "translateX(-200px)");
+            $(".hamburger").css("z-index", "305");
+            $("body").css("position", "fixed");
+            $(".circles").css("margin-top", "150vh");
         }
         else
         {
             $(this).removeClass("is-active");
             $(this).data("is-active",!$(this).data("is-active"));
+
+            let hamTl = gsap.timeline();
+            hamTl.to(".splashPortfolioName",{
+                x: 0,
+                duration: 0.25
+            });
+            hamTl.to("aside.right-menu",{
+                x: 300,
+                duration: 0.25
+            });
+            $(".roles").css("transform", "translateX(0px)");
+            $("body").css("position", "relative");
+            $(".hamburger").css("z-index", "305");
+            $(".circles").css("margin-top", "0vh");
         }
         console.log($(this).data("is-active"))
     });

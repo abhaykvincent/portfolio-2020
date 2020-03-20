@@ -37,7 +37,8 @@
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::before,
 .hamburger.is-active .hamburger-inner::after {
-  background-color: #000;
+  background-color: #da721e;
+  opacity: 0.8;
 }
 
 .hamburger-box {
@@ -1424,6 +1425,15 @@ body header .hamburger {
   height: 100%;
   -webkit-transform: translateX(-40px);
           transform: translateX(-40px);
+}
+
+body aside.right-menu {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 300px;
+  height: 100vh;
+  background-color: #0f0903;
 }
 
 body main {
